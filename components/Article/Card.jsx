@@ -28,7 +28,7 @@ const Card = () => {
       </div>
       <div className={styles.content}>
         <h1>{title}</h1>
-        <h4>{description}</h4>
+        <h4 style={{ marginBottom: 40 }}>{description}</h4>
 
         <div>
           <p className={styles.fieldHeading}>Authors:</p>
