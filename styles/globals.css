@@ -14,3 +14,174 @@ a {
 * {
   box-sizing: border-box;
 }
+.login-bg {
+  background-image: url("123.png");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: right;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: center;
+}
+.logincontainer {
+  width: 50vw;
+  height: 100vh;
+
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagecontainer {
+  width: 200px;
+  padding-top: 30px;
+  margin-top: 25px;
+  font-weight: 100;
+}
+.heading {
+  font-size: 30px;
+}
+.Blank {
+  border-top: none;
+  border-left: 0;
+  border-right: 0;
+  width: 60%;
+  margin-top: 30px;
+}
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.OR {
+  font-weight: 500;
+  color: #a8a7a7;
+  margin-top: 50px;
+  font-size: x-large;
+}
+.btn {
+  background-color: #279574;
+  border: none;
+  border-radius: 8px;
+  width: 50%;
+  height: 34px;
+  margin-top: 15px;
+  color: #fff;
+}
+.logintext {
+  color: #54beb8;
+  margin-top: 30px;
+}
+.google {
+  color: #181818;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: left;
+  margin-left: 15px;
+}
+.logogoogle {
+  width: 20%;
+  height: 10%;
+  display: block;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.buttoncontainer {
+  display: flex;
+  flex-direction: row;
+}
+.commoncontainer{
+  display: flex;
+  color: #fff;
+  }
+.thelogocontainer {
+  width:60px;
+  margin-left: 40px;
+  margin-right: 5px;
+  /* display: flex; */
+  /* flex-direction: row; */
+ 
+}
+.thenavbar {
+  background: #06283d;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:30px 0;
+}
+.navbar ul{
+  overflow: auto;
+}
+.navbar li{
+  float:left;
+  list-style: none; 
+  margin: 13px 20px;
+  
+}
+.navbar li a{
+  padding: 3px 3px;
+  text-decoration: none;
+  color: white;
+}
+.search{
+  float: right;
+  padding: 12px ;
+  height: 35px;
+  width:30vw;
+  background: rgba(160, 158, 158, 0.36);
+border: 1px solid #5C5B5B;
+border-radius: 4px;
+
+}
+.searchicon{
+  width:30px;
+  position: absolute;
+  margin-right: 15px;
+  cursor: pointer;
+  
+}
+.search::placeholder{
+  color: #fff;
+}
+.navbar input{
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+.searchbarcontainer{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.allicons{
+display:flex ;
+gap:23px;
+flex-direction: row;
+margin-right:40px ;
+}
+.uploadicon{
+  width:23px;
+}
+.photoicon{
+  width:23px; 
+
+}
+.albertpic{
+  width:25px; 
+  height: 34px;
+}
+
