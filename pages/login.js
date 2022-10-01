@@ -1,8 +1,8 @@
 import React from "react";
-import nasa from "../styles/nasa.png";
+import nasa from "../public/Image/nasa.png";
 import Image from "next/image";
-import google from "../styles/google_.png";
-import facebook from "../styles/facebook.png";
+import google from "../public/Image/google_.png";
+import facebook from "../public/Image/facebook.png";
 
 const Login = () => {
   return (
