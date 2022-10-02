@@ -96,7 +96,7 @@ function Navbar(props) {
           <Image src={photo} alt="photo" layout="responsive" />
         </div>
         <div className="albertpic">
-          <Image src={albertpic} alt="albert" layout="responsive" />
+          {/* <Image src={albertpic} alt="albert" layout="responsive" /> */}
         </div>
       </div>
     </div>
