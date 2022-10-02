@@ -7,6 +7,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Router from "next/router";
 
 const UploadFile = () => {
   const [startDate, setStartDate] = useState("");
@@ -46,6 +47,7 @@ const UploadFile = () => {
     formData.append("form", JSON.stringify(form));
     const req = await axios.post("http://localhost:8000/api/article", formData);
     dismiss();
+    Router.push("/articles");
   };
 
   return (
