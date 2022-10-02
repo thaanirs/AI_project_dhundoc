@@ -57,6 +57,25 @@ def getImgDescp(filename):
             
             
     return imgdescps
+def getimgdescptext(filename):
+    pdf_file = fitz.open(filename)
+    pdf_images = []
+    imgdescp=[]
+    nlp = spacy.load('en_core_web_sm')
+    nlp.add_pipe('textrank')
+    for page_ndex in range(len(pdf_file)):
+        page = pdf_file[page_ndex]
+        image_list= pdf_file.get_page_images(page_ndex)
+        if image_list:
+            # tottext = page.extract_text()
+            doc = nlp(page.extract_text())
+            for sent in doc.sents:
+                if 'figure' in sent.text.lower():
+                    imgdescp.append(sent.text)
+                if 'fig' in sent.text.lower():
+                    imgdescp.append(sent.text)
+                
+    return imgdescp
 
 def getabstract(filereader):
     fulltext = []
