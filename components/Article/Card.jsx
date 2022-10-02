@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./card.module.css";
 import Image from "next/image";
 import PDF_Img from "../../public/Image/pdf_ui.png";
 import Link from "next/link";
 
 const Card = ({ data }) => {
+  const [counter, setCounter] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      setCounter(counter + 1);
+    }, 15000);
+  });
   return (
     <div className={styles.container}>
       <div>
@@ -48,6 +54,10 @@ const Card = ({ data }) => {
             {data.tags.map((tag, idx) => {
               return <p key={idx}>{tag}</p>;
             })}
+          </div>
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <p class={{ fontWeight: "900" }}>views:</p>
+            <p>{counter}</p>
           </div>
         </div>
       </div>
