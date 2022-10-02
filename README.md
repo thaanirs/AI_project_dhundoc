@@ -17,6 +17,15 @@ The challenge is to develop an AI application to improve the accessibility and d
 * ML/NLP: Python, NLTK, Spacy,
 * DBMS and Cloud Services: MongoDB, AWS S3
 
+### Snapshots
+
+![WhatsApp Image 2022-10-02 at 11 36 16](https://user-images.githubusercontent.com/53876196/193440476-e36459b2-9555-48ef-b283-8cbfaf5aad68.jpeg)
+
+![WhatsApp Image 2022-10-02 at 11 36 42](https://user-images.githubusercontent.com/53876196/193440504-53558f93-1e00-4ec8-934e-88a6d9f00e2b.jpeg)
+
+![WhatsApp Image 2022-10-02 at 11 37 01](https://user-images.githubusercontent.com/53876196/193440506-10e5cb5e-c262-4c8f-9ae5-d6e8d874da40.jpeg)
+
+![WhatsApp Image 2022-10-02 at 11 37 33](https://user-images.githubusercontent.com/53876196/193440507-edbd9c53-d1b8-46b9-9d90-81919d813c07.jpeg)
 
 ### Frameworks & Depencies
 fastapi==0.81.0,
