@@ -45,7 +45,10 @@ const UploadFile = () => {
     const formData = new FormData();
     formData.append("file", file);
     formData.append("form", JSON.stringify(form));
-    const req = await axios.post("http://localhost:8000/api/article", formData);
+    const req = await axios.post(
+      "https://nasa-api-x.herokuapp.com/api/article",
+      formData
+    );
     dismiss();
     Router.push("/articles");
   };
