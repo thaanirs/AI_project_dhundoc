@@ -18,7 +18,7 @@ const Card = ({ data }) => {
       </div>
       <div className={styles.content}>
         <h1>{data.title}</h1>
-        <h4 style={{ marginBottom: 40 }}>{data.title}</h4>
+        <h4 style={{ marginBottom: 40 }}>{data.summary}</h4>
 
         <div>
           <p className={styles.fieldHeading}>Authors:</p>
@@ -28,8 +28,8 @@ const Card = ({ data }) => {
             })}
           </div>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Field heading={"Date Acquired:"} value={"23/10/2022"} />
-            <Field heading={"Publication Date"} value={"18/10/2021"} />
+            <Field heading={"Date Acquired:"} value={data.acquired} />
+            <Field heading={"Publication Date"} value={data.published} />
           </div>
 
           <p className={styles.fieldHeading}>Publication Information:</p>
@@ -39,7 +39,12 @@ const Card = ({ data }) => {
             <Field heading={"Issue"} value={"20"} />
             <Field heading={"ISSN"} value={"1345-1013"} />
           </div>
-          <Field heading={"Keywords"} value={data.tags.toString()} />
+          <p className={styles.fieldHeading}>Tags</p>
+          <div className={styles.tag}>
+            {data.tags.map((tag, idx) => {
+              return <p key={idx}>{tag}</p>;
+            })}
+          </div>
         </div>
       </div>
     </div>

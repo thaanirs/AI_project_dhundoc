@@ -12,6 +12,7 @@
   border: 2px solid #c3c3c3;
   padding: 10px;
   margin-left: 10px;
+  width: 80%;
 }
 
 .authorGrid {
@@ -53,4 +54,9 @@
   margin: 5px;
   border-radius: 50px;
   color: #9b9b9b;
+}
+
+.tag {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
