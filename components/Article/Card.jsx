@@ -20,15 +20,13 @@ const Card = ({ data }) => {
           <div className={styles.prochip}>Protected</div>
         )}
         <div className={styles.image}>
-          <a target="_blank" href={data.fileLocation} rel="noopener noreferrer">
-            <Image src={PDF_Img} alt="Pdf image" />
-          </a>
+          <Image src={PDF_Img} alt="Pdf image" />
         </div>
       </div>
       <div className={styles.content}>
-        <a style={{ cursor: "pointer" }} href="/articles">
+        <Link style={{ cursor: "pointer" }} href="/articles">
           <h1>{data.title}</h1>
-        </a>
+        </Link>
 
         <h4 style={{ marginBottom: 40 }}>{data.summary}</h4>
 

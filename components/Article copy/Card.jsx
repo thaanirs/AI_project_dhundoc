@@ -8,9 +8,9 @@ const Card = ({ data }) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <a style={{ cursor: "pointer" }} href="/articles">
+        <Link style={{ cursor: "pointer" }} href="/articles">
           <h1>{data.title}</h1>
-        </a>
+        </Link>
 
         <h4 style={{ marginBottom: 40 }}>{data.summary}</h4>
 

@@ -1,8 +1,6 @@
 import React from "react";
-import nasa from "../styles/nasa.png";
+import nasa from "../public/Image/nasa.png";
 import Image from "next/image";
-import google from "../styles/google_.png";
-import facebook from "../styles/facebook.png";
 
 const Login = () => {
   return (
@@ -10,7 +8,6 @@ const Login = () => {
       <div className="login-bg">
         <div className="logincontainer">
           <div className="imagecontainer">
-            {" "}
             <Image alt="" src={nasa} layout="responsive" />
           </div>
           <br />
@@ -18,12 +15,10 @@ const Login = () => {
           <input className="Blank" type="text" placeholder="User id" />
           <input className="Blank" type="text" placeholder="Organization" />
           <input className="Blank" type="text" placeholder="Password" />
-          
-          
 
           <button className="btn">Login</button>
           <p>
-            Don't have an Account?<span className="logintext">Create</span>
+            Don&apos;t have an Account?<span className="logintext">Create</span>
           </p>
         </div>
       </div>

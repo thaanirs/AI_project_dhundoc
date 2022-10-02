@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../../components/Article/Card";
-import PDFViewer from "pdf-viewer-reactjs";
 import Navbar from "../../components/Navbar";
 
 import Articles from "../../components/Article copy";
