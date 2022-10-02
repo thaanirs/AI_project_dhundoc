@@ -64,7 +64,7 @@ const Card = ({ data }) => {
             })}
           </div>
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <p className={{ fontWeight: "900" }}>views:</p>
+            <p class={{ fontWeight: "900" }}>views:</p>
             <p>{counter}</p>
           </div>
         </div>
