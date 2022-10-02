@@ -5,6 +5,9 @@ import Image from "next/image";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Router from "next/router";
 
 const UploadFile = () => {
   const [startDate, setStartDate] = useState("");
@@ -15,9 +18,9 @@ const UploadFile = () => {
     title: "",
     summary: "",
     type: "",
-    publication: "",
-    acquired: "",
-    access: "",
+    publishedAt: "",
+    acquiredAt: "",
+    public: true,
   });
 
   const uploadFileRef = useRef(null);
@@ -33,10 +36,21 @@ const UploadFile = () => {
     setFile(currfile);
   };
 
-  const submitHandler = () => {
+  const toastId = React.useRef(null);
+  const notify = () => (toastId.current = toast("Uploading Document..."));
+  const dismiss = () => toast.dismiss(toastId.current);
+
+  const submitHandler = async () => {
+    notify();
     const formData = new FormData();
     formData.append("file", file);
-    const req = axios.post("http://localhost:8000/api/article", formData);
+    formData.append("form", JSON.stringify(form));
+    const req = await axios.post(
+      "https://nasa-api-x.herokuapp.com/api/article",
+      formData
+    );
+    dismiss();
+    Router.push("/articles");
   };
 
   return (
@@ -109,13 +123,13 @@ const UploadFile = () => {
               value={form.publication}
               selected={startDate}
               placeholderText="Publication Date"
-              onChange={(date) => setForm({ ...form, publication: date })}
+              onChange={(date) => setForm({ ...form, publishedAt: date })}
             />
             <DatePicker
               selected={startDate}
               value={form.acquired}
               placeholderText="Acquired Date"
-              onChange={(date) => setForm({ ...form, acquired: date })}
+              onChange={(date) => setForm({ ...form, acquiredAt: date })}
             />
           </span>
           <div>
@@ -125,6 +139,7 @@ const UploadFile = () => {
           </div>
         </div>
       </div>
+      <ToastContainer autoClose={false} />
     </div>
   );
 };
