@@ -13,9 +13,6 @@ export default function Home() {
       </Head>
       <Navbar />
       <Articles />
-      <main className={styles.main}>
-        <h1 className={styles.title}>NASA Challenge</h1>
-      </main>
     </div>
   );
 }

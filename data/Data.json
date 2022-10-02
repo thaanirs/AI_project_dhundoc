@@ -1,0 +1,173 @@
+{
+  "userId": "string",
+  "articles": [
+    {
+      "title": "string1",
+      "authors": [{ "name": "string", "organization": "string" }],
+      "private": "boolean",
+      "publishedAt": "dateTime",
+      "acquiredAt": "dateTime",
+      "type": "string",
+      "tags": "[]string",
+      "metrics": {
+        "upvotes": "int",
+        "downVotes": "int",
+        "views": "int"
+      },
+      "publication": {
+        "name": "string2",
+        "volume": "int",
+        "issue": "int",
+        "issn": "int",
+        "doi": "int"
+      }
+    },
+    {
+      "title": "string3",
+      "authors": [{ "name": "string", "organization": "string" }],
+      "private": "boolean",
+      "publishedAt": "dateTime",
+      "acquiredAt": "dateTime",
+      "type": "string",
+      "tags": "[]string",
+      "metrics": {
+        "upvotes": "int",
+        "downVotes": "int",
+        "views": "int"
+      },
+      "publication": {
+        "name": "string4",
+        "volume": "int",
+        "issue": "int",
+        "issn": "int",
+        "doi": "int"
+      }
+    },
+    {
+      "title": "string5",
+      "authors": [{ "name": "string", "organization": "string" }],
+      "private": "boolean",
+      "publishedAt": "dateTime",
+      "acquiredAt": "dateTime",
+      "type": "string",
+      "tags": "[]string",
+      "metrics": {
+        "upvotes": "int",
+        "downVotes": "int",
+        "views": "int"
+      },
+      "publication": {
+        "name": "string6",
+        "volume": "int",
+        "issue": "int",
+        "issn": "int",
+        "doi": "int"
+      }
+    },
+    {
+      "title": "string7",
+      "authors": [{ "name": "string", "organization": "string" }],
+      "private": "boolean",
+      "publishedAt": "dateTime",
+      "acquiredAt": "dateTime",
+      "type": "string",
+      "tags": "[]string",
+      "metrics": {
+        "upvotes": "int",
+        "downVotes": "int",
+        "views": "int"
+      },
+      "publication": {
+        "name": "string",
+        "volume": "int",
+        "issue": "int",
+        "issn": "int",
+        "doi": "int"
+      }
+    },
+    {
+      "title": "string9",
+      "authors": [{ "name": "string", "organization": "string" }],
+      "private": "boolean",
+      "publishedAt": "dateTime",
+      "acquiredAt": "dateTime",
+      "type": "string",
+      "tags": "[]string",
+      "metrics": {
+        "upvotes": "int",
+        "downVotes": "int",
+        "views": "int"
+      },
+      "publication": {
+        "name": "string",
+        "volume": "int",
+        "issue": "int",
+        "issn": "int",
+        "doi": "int"
+      }
+    },
+    {
+      "title": "string",
+      "authors": [{ "name": "string", "organization": "string" }],
+      "private": "boolean",
+      "publishedAt": "dateTime",
+      "acquiredAt": "dateTime",
+      "type": "string",
+      "tags": "[]string",
+      "metrics": {
+        "upvotes": "int",
+        "downVotes": "int",
+        "views": "int"
+      },
+      "publication": {
+        "name": "string",
+        "volume": "int",
+        "issue": "int",
+        "issn": "int",
+        "doi": "int"
+      }
+    },
+    {
+      "title": "string",
+      "authors": [{ "name": "string", "organization": "string" }],
+      "private": "boolean",
+      "publishedAt": "dateTime",
+      "acquiredAt": "dateTime",
+      "type": "string",
+      "tags": "[]string",
+      "metrics": {
+        "upvotes": "int",
+        "downVotes": "int",
+        "views": "int"
+      },
+      "publication": {
+        "name": "string",
+        "volume": "int",
+        "issue": "int",
+        "issn": "int",
+        "doi": "int"
+      }
+    },
+    {
+      "title": "string",
+      "authors": [{ "name": "string", "organization": "string" }],
+      "private": "boolean",
+      "publishedAt": "dateTime",
+      "acquiredAt": "dateTime",
+      "type": "string",
+      "tags": "[]string",
+      "metrics": {
+        "upvotes": "int",
+        "downVotes": "int",
+        "views": "int"
+      },
+      "publication": {
+        "name": "string",
+        "volume": "int",
+        "issue": "int",
+        "issn": "int",
+        "doi": "int"
+      }
+    }
+  ]
+}

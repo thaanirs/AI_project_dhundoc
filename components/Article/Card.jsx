@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./card.module.css";
 import Image from "next/image";
 import PDF_Img from "../../public/Image/pdf_ui.png";
+import Link from "next/link";
 
 const Card = ({ data }) => {
   return (
@@ -17,7 +18,10 @@ const Card = ({ data }) => {
         </div>
       </div>
       <div className={styles.content}>
-        <h1>{data.title}</h1>
+        <a style={{ cursor: "pointer" }} href="/articles">
+          <h1>{data.title}</h1>
+        </a>
+
         <h4 style={{ marginBottom: 40 }}>{data.summary}</h4>
 
         <div>
