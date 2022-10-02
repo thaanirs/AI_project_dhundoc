@@ -1,0 +1,45 @@
+.container {
+  margin: 10px;
+  width: 100%;
+  height: 70vh;
+  background-color: #ffffff;
+}
+
+.container input {
+  border-top: none;
+  border-left: 0;
+  border-right: 0;
+  width: 90%;
+  height: 30px;
+  margin-top: 25px;
+}
+
+.header {
+  background-color: #06283d;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.chip {
+  background-color: #e6e6e6;
+  padding: 5px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 50px;
+  color: #1f9f33;
+  width: 100%;
+}
+
+.btn {
+  color: #1f9f9f;
+  border: 2px solid #1f9f9f;
+  background-color: white;
+  padding: 8px 28px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 25px;
+}

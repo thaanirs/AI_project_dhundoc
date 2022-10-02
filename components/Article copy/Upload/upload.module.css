@@ -1,0 +1,73 @@
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.upload {
+  background-color: #fcfcfc;
+  display: grid;
+  place-content: center;
+  height: 70vh;
+}
+
+.link {
+  color: #35a2f0;
+  text-decoration: underline;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.uploadContent {
+  text-align: center;
+  line-height: 0.4;
+}
+
+.uploadContent p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.uploadContainer {
+  width: 50%;
+  border: 1px solid #959598;
+  border-style: dotted;
+}
+
+.docContainer {
+  margin-left: 30px;
+  background-color: #fcfcfc;
+  /* display: grid;
+  place-content: center; */
+  height: 70vh;
+  width: 50%;
+  border: 1px solid #959598;
+  border-style: dotted;
+}
+
+.docContainer input {
+  border-top: none;
+  border-left: 0;
+  border-right: 0;
+  width: 95%;
+  height: 30px;
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.docContainer input::placeholder {
+  color: #b5b5b9;
+}
+
+.btn {
+  display: grid;
+  place-content: center;
+  color: #fff;
+  background-color: #06283d;
+  padding: 8px 28px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 25px;
+  border-radius: 5px;
+}
