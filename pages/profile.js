@@ -3,8 +3,8 @@ import Image from "next/image";
 import bg from "../public/Image/bgofalbert.svg";
 import him from "../public/Image/circlepicofalbert.svg";
 import Navbar from "../components/Navbar";
-import Profileupdate from "../Components/profileupdate";
-import PersonalArticle from "../Components/personalArticle";
+import Profileupdate from "../components/profileupdate";
+import PersonalArticle from "../components/personalArticle";
 
 const Profile = () => {
   return (
