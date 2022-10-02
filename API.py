@@ -100,43 +100,11 @@ def main(filename):
 def main_with_url(url):
     
     # url = 'https://doc-0c-2c-prod-03-apps-viewer.googleusercontent.com/viewer2/prod-03/pdf/9jn1e0jcb4vuhlg2rg91j1rkel93775u/jdslu3fdm904jf00s88jviollq5lj7qq/1664634000000/3/*/APznzaZjmDhh-2YM8NCN4_g2PwbQnvEvPkTDC9Q3H9ffqn47r551wvZ5pLpd_e9GQNaG2evnY3VhP5C1wzK2TRovD9xLrMgq--XeZo4q28pVCwh5Wbdz9Gk_ykUUbe8PBD2NaQTeGi_qMbSESp86cDxYP6k8XEwywie8DK7EHdEl17CXEruJ49FLwGFzR8MJ3qUPYip0ybcEc8X2Tyc5s08ft2sqyl6KMyy8jrSLv0J9KMCS0xaW-0vYn7G2PDqQjx2YflnJjjQD8ucdqfCkr2MNMSoqjnMnJCLDjJQ4xAam68YPLY8qoS_WFhZT9O5EMEm463QQ2eukgNGOLIx0oVFhL6TMe1M6jISCDkcp_7_85w3xD4293xiJnG-dYkOAGOfInMGzj5oz?authuser'
-    """writer = PyPDF2.PdfFileWriter()
-    remoteFile = urlopen(Request(url)).read()
-    print('hi')
-    # remotefile = remoteFile[ :remoteFile.find("%%EOF") ]
     
-    # newfile = open('newfile.pdf','wb')
-    # newfile.write(remoteFile)
-    # newfile.close()
-    
-    memoryfile = StringIO(remoteFile)
-    pdffile = PyPDF2.PdfReader(memoryfile)"""
-   
-    """ url = "http://www.silicontao.com/ProgrammingGuide/other/beejnet.pdf"
-    writer = PyPDF2.PdfFileWriter()
-
-    remoteFile = urlopen(Request(url)).read()
-    
-    memoryFile = StringIO(remoteFile)
-    print('=================',type(memoryFile))
-
-    pdfFile = PyPDF2.PdfFileReader(memoryFile)
-
-    for pageNum in range(pdfFile.getNumPages()):
-            currentPage = pdfFile.getPage(pageNum)
-            #currentPage.mergePage(watermark.getPage(0))
-            writer.addPage(currentPage)
-
-
-    outputStream = open("output.pdf","wb")
-    writer.write(outputStream)
-    outputStream.close()"""
 
     urllib.request.urlretrieve(url, "mast.pdf")
     text=''
-    # filename=''
-    # file = open('newfile.pdf','rb')
-    # filereader = PyPDF2.PdfReader(file)
+    
     file = open("mast.pdf",'rb')
     filereader = PyPDF2.PdfReader(file)
     text = getabstract(filereader)
@@ -155,4 +123,4 @@ async def create_item(item: Item):
 
 @app.get('/')
 async def index():
-    return {"message":"hello"}
+    return {"message":"<h1>Page Works/<h1>"}
