@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Aaruush - NASA Space Apps Challenge
 
-## Getting Started
+## Can AI Preserve Our Science Legacy?
 
-First, run the development server:
+### Problem Statement
+The challenge is to develop an AI application to improve the accessibility and discoverability of records in the NTRS. For example, You could use AI to read NTRS documents, generate text analytic data, and produce a list of topic keywords to help researchers find the documents they need. We need to think about what types of information future researchers will need to locate desired documents and what would be the best data to aid them in their search.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Solution
+* A simple and user friendly web interface for users to seamlessly search the required research paper while leveraging the power of AI.
+* Complete automated solution to promote collaborative work and peer reviews on research papers, allowing one to upload their own documents
+* A robust filter system allowing the user to select from the plethora of documents, which ones they wish to take a look at.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stacks
+* Frontend: HTML, CSS, Next.js, Bootstrap
+* Backend: FastAPI, Node.js
+* UI/UX: Figma, Adobe Photoshop
+* ML/NLP: Python, NLTK, Spacy,
+* DBMS and Cloud Services: MongoDB, AWS S3
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Frameworks & Depencies
+fastapi==0.81.0,
+gTTS==2.2.4,
+gunicorn==20.1.0,
+nltk==3.7,
+numpy==1.22.2,
+pandas==1.4.0,
+Pillow==8.2.0,
+pydantic==1.9.2,
+PyMuPDF==1.20.2,
+PyPDF2==2.11.0,
+pytesseract==0.3.10,
+pytextrank==3.2.4,
+requests==2.27.1,
+sklearn==0.0,
+spacy==3.4.1,
+spacy-legacy==3.0.10,
+spacy-loggers==1.0.3,
+streamlit==1.13.0,
+summa==1.2.0,
+tokenizers==0.12.1,
+transformers==4.22.2,
+urllib3==1.26.8,
+uvicorn==0.18.3,
+yake==0.4.8,
+NTRS Open API,
+Google Chrome,
+cors, axios
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Team-The One After X
+* Srinaath Narasimhan
+* Yashowardhan Samdhani 
+* Tuhin Dutta 
+* Vyshnavi Madhusudhan 
+* Mohammed Farhaan
