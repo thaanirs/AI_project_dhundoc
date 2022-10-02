@@ -3,7 +3,7 @@ import styles from "./card.module.css";
 import Image from "next/image";
 import PDF_Img from "../../public/Image/pdf_ui.png";
 import Link from "next/link";
-
+import Router from "next/router";
 const Card = ({ data }) => {
   return (
     <div className={styles.container}>
@@ -14,7 +14,9 @@ const Card = ({ data }) => {
           <div className={styles.prochip}>Protected</div>
         )}
         <div className={styles.image}>
-          <Image src={PDF_Img} alt="Pdf image" />
+          <a target="_blank" href={data.fileLocation} rel="noopener noreferrer">
+            <Image src={PDF_Img} alt="Pdf image" />
+          </a>
         </div>
       </div>
       <div className={styles.content}>
@@ -32,8 +34,14 @@ const Card = ({ data }) => {
             })}
           </div>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Field heading={"Date Acquired:"} value={data.acquired} />
-            <Field heading={"Publication Date"} value={data.published} />
+            <Field
+              heading={"Date Acquired:"}
+              value={data.acquiredAt?.toISOString()}
+            />
+            <Field
+              heading={"Publication Date"}
+              value={data.publishedAt?.toISOString()}
+            />
           </div>
 
           <p className={styles.fieldHeading}>Publication Information:</p>
