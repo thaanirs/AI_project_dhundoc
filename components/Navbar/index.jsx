@@ -7,6 +7,7 @@ import photo from "../../public/Image/Group (2).svg";
 import albertpic from "../../public/Image/albertpic.svg";
 // import useSpeech from "../../hooks/useSpeech";
 import mic from "../../public/navbar/mic.svg";
+import Router from "next/router";
 
 // code for checking support
 let speech;
@@ -48,8 +49,11 @@ function Navbar(props) {
   return (
     <div className="thenavbar">
       <div className="commoncontainer">
-        <div className="thelogocontainer">
-          {" "}
+        <div
+          className="thelogocontainer"
+          onClick={() => Router.push("/")}
+          style={{ cursor: "pointer" }}
+        >
           <Image src={thelogo} alt="Foo image" layout="responsive" />
         </div>
 
@@ -80,7 +84,13 @@ function Navbar(props) {
       {/* upload */}
       <div className="allicons">
         <div className="uploadicon">
-          <Image src={upload} alt="upload" layout="responsive" />
+          <Image
+            src={upload}
+            alt="upload"
+            layout="responsive"
+            onClick={() => Router.push("/upload")}
+            style={{ cursor: "pointer" }}
+          />
         </div>
         <div className="photoicon">
           <Image src={photo} alt="photo" layout="responsive" />

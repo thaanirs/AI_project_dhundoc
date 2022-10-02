@@ -3,37 +3,27 @@ import styles from "./card.module.css";
 import Image from "next/image";
 import PDF_Img from "../../public/Image/pdf_ui.png";
 
-const Card = () => {
-  const title =
-    "Chronic Water Stress Reduces Tree Growth And The Carbon Sink Of Deciduous Hardwood Forests";
-  const description =
-    "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.";
-
-  const authors = [
-    "Edward R. Brzostek",
-    "Danilo Dragoni",
-    "Hans Peter Schmid",
-    "Edward R. Brzostek",
-    "Danilo Dragoni",
-    "Hans Peter Schmid",
-  ];
-
+const Card = ({ data }) => {
   return (
     <div className={styles.container}>
       <div>
-        <div className={styles.chip}>Public</div>
+        {data.public ? (
+          <div className={styles.pubchip}>Public</div>
+        ) : (
+          <div className={styles.prochip}>Protected</div>
+        )}
         <div className={styles.image}>
           <Image src={PDF_Img} alt="Pdf image" />
         </div>
       </div>
       <div className={styles.content}>
-        <h1>{title}</h1>
-        <h4 style={{ marginBottom: 40 }}>{description}</h4>
+        <h1>{data.title}</h1>
+        <h4 style={{ marginBottom: 40 }}>{data.title}</h4>
 
         <div>
           <p className={styles.fieldHeading}>Authors:</p>
           <div className={styles.authorGrid}>
-            {authors.map((author, idx) => {
+            {data.authors.map((author, idx) => {
               return <p key={idx}>{author}</p>;
             })}
           </div>
@@ -49,7 +39,7 @@ const Card = () => {
             <Field heading={"Issue"} value={"20"} />
             <Field heading={"ISSN"} value={"1345-1013"} />
           </div>
-          <Field heading={"Keywords"} value={authors.toString()} />
+          <Field heading={"Keywords"} value={data.tags.toString()} />
         </div>
       </div>
     </div>
