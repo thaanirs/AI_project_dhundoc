@@ -56,9 +56,8 @@ NTRS Open API,
 Google Chrome,
 cors, axios
 
-## Team-The One After X
+## DocDHUND
 * Srinaath Narasimhan
-* Yashowardhan Samdhani 
-* Tuhin Dutta 
-* Vyshnavi Madhusudhan 
-* Mohammed Farhaan
+* Harashnabin Roy 
+* Kunal Kankariya
+
