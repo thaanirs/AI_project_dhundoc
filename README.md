@@ -1,4 +1,3 @@
-# Aaruush - NASA Space Apps Challenge
 
 ## Can AI Preserve Our Science Legacy?
 
